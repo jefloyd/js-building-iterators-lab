@@ -7,7 +7,6 @@ function myEach(arr, callback) {
   	callback(array[i], i, arr)
   }
 
-
 }
 
 /*
