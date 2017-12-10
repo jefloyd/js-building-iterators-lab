@@ -5,20 +5,15 @@ var values=[];
 function myMap(arr, callback) {
 
 //  CODE INSIDE HERE   //
-	 
-	for(i = 0; i < arr.length ; i++) {
-  		result.push(callback(array[i], i, arr)
+	var outputArray = [];
+  for (var i=0; i<arr.length; i++) {
+    outputArray.push(callback(arr[i], i, arr));
   }
-
-  return Result;
-
+  return outputArray;
 }
 
 
 
-}
-
-myMap();
 /*
  Best if you don't code out here.
  If you want to check your code, use `index.js`!
