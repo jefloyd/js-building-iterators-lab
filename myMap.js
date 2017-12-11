@@ -2,15 +2,17 @@
 
 var values=[];
 
-function myMap(arr, callback) {
+
 
 //  CODE INSIDE HERE   //
-	var outputArray = [];
+	function myMap(arr, callback) {
+  var outputArray = [];
   for (var i=0; i<arr.length; i++) {
     outputArray.push(callback(arr[i], i, arr));
   }
   return outputArray;
 }
+
 
 
 

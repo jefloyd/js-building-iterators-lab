@@ -1,9 +1,28 @@
-// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce for more details
-// Don't worry about initialValue at first. You can always add it in later.
+/* write your myReduce function body in the function below */
 
-function myReduce(arr, callback) {
 
-//  CODE INSIDE HERE   //
+
+
+/* basic solution without providing an initialValue */
+
+// function myReduce(arr, callback) {
+//   previousValue = arr[0];
+//
+//   for(var i=1; i< arr.length; i++) {
+//     previousValue = callback(previousValue, arr[i], i, arr);
+//   }
+//   return previousValue;
+// }
+
+
+
+
+
+
+
+
+/* solution with or without initialValue being provided as an argument */
+
 function myReduce(arr, callback, initialValue) {
   // first pass is special because it uses initialValue rather than the result
   //    from the last run.
@@ -26,12 +45,6 @@ function myReduce(arr, callback, initialValue) {
   return previousValue;
 }
 
-}
-
-/*
- Best if you don't code out here.
- If you want to check your code, use `index.js`!
-*/
 
 
 
